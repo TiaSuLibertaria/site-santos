@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Fundo com imagem */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("ceu022.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Etapa 1: Header com botões */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #c0d1dc;
+  padding: 15px;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Botões do header */
+header button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #18094b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header button:hover {
+  background-color: #321679;
+}
+
+/* Etapa 2: Campo de pesquisa */
+
+.pesquisa-wrapper {
+    height: 100vh; /* 100% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pesquisa input {
+    padding: 10px;
+    font-size: 19px;
+    width: 100%;        /* 👈 aumentamos a largura */
+    max-width: 500px;  /* 👈 permite que o campo fique maior */
+    border: 1px solid #1d4b68;
+    border-radius: 2px 0 0 2px;
+  }
+
+.btn-pesquisar {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #1d4b68;
+  border-left: none;
+  background-color: #1a2c44;
+  border-radius: 2px 0px 0px 0px;
+  cursor: pointer;
+}
+.btn-pesquisar:hover {
+    background-color: #537eaf;   /* muda a cor quando passa o mouse */
+    color: white;                /* deixa o texto/brilho branco */
+    transition: background-color 0.3s ease;
+  }
+
+/* Etapa 3: Galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.foto {
+  width: 200px;
+  text-align: center;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease;  /* Adiciona a transição suave */
+  }
+  
+  .foto img:hover {
+    filter: brightness(0.8);  /* Deixa a imagem um pouco mais escura */
+  }
+
+  .foto p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Font mais "gordinha", para destaque */
+    font-size: 16px;
+    color: #0b0119;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1px; /* Mais espaçamento entre as letras */
+    text-shadow: 1px 1px 3px rgba(245, 241, 241, 0.1); /* Um leve sombreado */
+  }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pesquisa {
+    flex-direction: column;
+  }
+
+  .pesquisa input {
+    width: 80%;
+    border-radius: 4px;
+  }
+
+  .btn-pesquisar {
+    margin-top: 10px;
+    border-radius: 4px;
+    border-left: 1px solid #ccc;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+}

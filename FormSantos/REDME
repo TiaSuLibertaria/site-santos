@@ -1,0 +1,34 @@
+# 🙏 Site dos Santos
+
+Um site dedicado a contar a vida e os milagres dos santos mais conhecidos da tradição cristã. Este projeto é voltado para fins informativos e educativos.
+
+## 🌐 Sobre o projeto
+
+A ideia principal é criar um site simples e bonito onde você possa:
+- Conhecer a história de diferentes santos
+- Ler sobre seus milagres e feitos
+- Navegar de forma fácil entre as páginas
+
+Neste momento, apenas a **página inicial** foi estilizada usando **HTML e CSS**. Em breve, serão adicionadas funcionalidades com **JavaScript**.
+
+## 🛠️ Tecnologias usadas
+
+- HTML5
+- CSS3
+- (Em breve) JavaScript
+
+## 📸 Preview
+
+https://github.com/TiaSuLibertaria/site-santos/blob/main/site_santos.png
+
+
+## 🚀 Futuras melhorias
+
+- Botões funcionais com JavaScript
+- Seção individual para cada santo
+- Layout responsivo para celular
+- Dark Mode
+
+
+
+Feito com ❤️ por [Suelen]
